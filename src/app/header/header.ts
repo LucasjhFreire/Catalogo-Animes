@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './header.css',
   templateUrl: './header.html',
 })
-export class Header {}
+
+export class TitleComponent {
+  titulo: string = 'AnimesHub';
+  onSearch(event: any) {
+  console.log(event.target.value)
+}
+  executarBusca() {
+    console.log('Pesquisando...');
+  }
+}

@@ -1,1 +1,14 @@
-<p>header works!</p>
+<header class="main-header">
+  <div class="header-container">
+    <h1 class="site-title">{{ titulo }}</h1>
+    
+    <div class="search-box">
+      <input 
+        type="text" 
+        placeholder="Pesquisar anime..." 
+        (input)="onSearch($event)"
+      >
+      <button (click)="executarBusca()">🔍</button>
+    </div>
+  </div>
+</header>
