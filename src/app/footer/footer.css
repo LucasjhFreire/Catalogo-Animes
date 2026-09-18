@@ -1,0 +1,21 @@
+div.social_links img {
+    width:30px;
+}
+
+div.social_links {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+}
+
+div.social_links h3.direitos,
+div.social_links h3.criador, div.social_links h4.redes_sociais {
+    color: #ff6b6b;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+

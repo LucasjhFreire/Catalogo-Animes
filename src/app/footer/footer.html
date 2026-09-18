@@ -1,1 +1,35 @@
-<p>footer works!</p>
+
+<!-- <p>Instagram: {{ instagram }} <br>GitHub: {{ gitHub }} <br>Whatsapp {{ whatsapp }}</p> -->
+<!-- <img class="instagram" src="/Imagens/Icone_Insta.png">Instagram
+<img class="gitHub" src="/Imagens/Icone GitHub.png">GitHub
+<img class="whatsapp" src="/Imagens/Icone Whatsapp.png">Whatsapp -->
+
+<div class="social_links">
+
+    <!-- Criador e Redes Sociais -->
+
+  <h3 class="criador">Criado por {{ criador }}</h3>
+  <h4 class="redes_sociais">Redes Sociais</h4>
+
+<!-- INSTAGRAM -->
+
+  <a [href]="instagram" target="_blank" title="Instagram">
+    <img src="/Imagens/Icone_Insta.png" alt="Whatsapp" />
+  </a>
+
+<!-- GITHUB -->
+
+  <a [href]="gitHub" target="_blank" title="Instagram">
+    <img src="/Imagens/Icone GitHub.png" alt="GitHub" />
+  </a>
+
+<!-- WHATSAPP -->
+
+  <a [href]="whatsapp" target="_blank" title="Whatsapp">
+    <img src="/Imagens/Icone Whatsapp.png" alt="Whatsapp" />
+  </a>
+
+
+
+  <h3 class="direitos">{{ direitos }} ©</h3>
+</div>
