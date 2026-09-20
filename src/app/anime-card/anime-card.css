@@ -1,0 +1,58 @@
+/* img.naruto {
+    width: 300px;
+}
+
+img.dragon_ball {
+    width: 300px;
+}
+
+img.one_piece {
+    width: 300px;
+}
+
+img.jujutsu_kaisen {
+    width: 300px;
+}
+
+img.death_note {
+    width: 300px;
+}
+
+img.demon_slayer {
+    width: 300px;
+}
+
+img.nanatsu_no_taizai {
+    width: 300px;
+}
+
+img.one_punsh_man {
+    width: 300px;
+} */
+    
+:host {
+    display: block;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.catalogo-animes {
+    display: flex;
+    flex-wrap: wrap;      
+    justify-content: center; 
+    gap: 20px;             
+}
+
+.catalogo-animes img {
+    width: 300px;
+    height: 420px; 
+    object-fit: cover; 
+    border-radius: 20px; 
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.catalogo-animes img:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.05); 
+}
