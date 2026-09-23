@@ -10,12 +10,12 @@ import {Router, RouterLink } from '@angular/router'
 export class AnimeCard {
   // Criar variaveis com o link dos animes 
 
-  naruto: string = '/anime/naruto';
-  dragon_ball: string = '/anime/dragon_ball';
-  one_piece: string = '/anime/one_piece';
-  jujutsu_kaisen: string = '/anime/jujutsu_kaisen';
-  death_note: string = '/anime/death_note';
-  demon_slayer: string = '/anime/demon_slayer';
-  nanatsu_no_taizai: string = '/anime/nanatsu_no_taizai';
-  one_punch_man: string = '/anime/one_punch_man';
+  naruto: string = 'https://www.crunchyroll.com/pt-pt/series/GY9PJ5KWR/naruto';
+  dragon_ball: string = 'https://www.crunchyroll.com/pt-pt/series/G8DHV7W21/dragon-ball';
+  one_piece: string = 'https://www.crunchyroll.com/pt-pt/series/GRMG8ZQZR/one-piece';
+  jujutsu_kaisen: string = 'https://www.crunchyroll.com/pt-pt/series/GRDV0019R/jujutsu-kaisen';
+  death_note: string = 'https://www.crunchyroll.com/pt-br/series/G6QWD3EE6/death-note';
+  demon_slayer: string = 'https://www.crunchyroll.com/pt-pt/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba';
+  nanatsu_no_taizai: string = 'https://www.crunchyroll.com/pt-pt/series/GY5VZ21KY/seven-mortal-sins';
+  one_punch_man: string = 'https://www.crunchyroll.com/pt-pt/series/G63K98PZ6/one-punch-man';
 }

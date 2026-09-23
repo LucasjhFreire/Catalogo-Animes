@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { AnimeCard } from './anime-card/anime-card'
-import { AnimePagina} from './anime-pagina/anime-pagina'
+
 
 export const routes: Routes = [
     // Quando estiver na página inicial mostra o catálogo de cards 
@@ -9,6 +9,6 @@ export const routes: Routes = [
 
     // Quando clica em um anime abre a página de detalhes
 
-    { path: 'anime/:id', component: AnimePagina}
+    { path: 'anime/:id',}
 ];
 
