@@ -8,35 +8,108 @@
 <img class="one_punch_man" src="Icones Animes/Icone One Punch Man.jpg"> -->
 
 <div class="catalogo-animes">
-    <a [href]="naruto" target="_blank" title="Naruto">
-        <img src="Icones Animes/Icone Naruto.jpg" alt="naruto">
-    </a>
-    
-    <a [href]="dragon_ball" target="_blank" title="Dragon Ball">
-        <img src="Icones Animes/Icone Dragon Ball.jpg" alt="dragon_ball">
-    </a>
-    
-    <a [href]="one_piece" target="_blank" title="One Piece">
-        <img src="Icones Animes/Icone One Piece.jpg" alt="one_piece">
-    </a>
-    
-    <a [href]="jujutsu_kaisen" target="_blank" title="Jujutsu Kaisen">
-        <img src="Icones Animes/Icone Jujutsu Kaisen.jpg" alt="jujutsu_kaisen">
-    </a>
-    
-    <a [href]="death_note" target="_blank" title="Death Note">
-        <img src="Icones Animes/Icone Death Note.jpg" alt="death_note">
-    </a>
-    
-    <a [href]="demon_slayer" target="_blank" title="Demon Slayer">
-        <img src="Icones Animes/Icone Demon Slayer.jpg" alt="demon_slayer">
-    </a>
-    
-    <a [href]="nanatsu_no_taizai" target="_blank" title="Nanatsu no Taizai">
-        <img src="Icones Animes/Icone Os Sete Pecados Capitais.jpg" alt="nanatsu_no_taizai">
-    </a>
-    
-    <a [href]="one_punch_man" target="_blank" title="One Punch Man">
-        <img src="Icones Animes/Icone One Punch Man.jpg" alt="one_punch_man">
-    </a>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoNaruto" (click)="favoritoNaruto = !favoritoNaruto">★</span>
+        <a [href]="naruto" target="_blank" title="Naruto">
+            <img src="Icones Animes/Icone Naruto.jpg" alt="naruto">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesNaruto = !detalhesNaruto">
+            {{ detalhesNaruto ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesNaruto">
+            <p>Um jovem ninja que procura reconhecimento e sonha em tornar-se o Hokage.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoDragonBall" (click)="favoritoDragonBall = !favoritoDragonBall">★</span>
+        <a [href]="dragon_ball" target="_blank" title="Dragon Ball">
+            <img src="Icones Animes/Icone Dragon Ball.jpg" alt="dragon_ball">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesDragonBall = !detalhesDragonBall">
+            {{ detalhesDragonBall ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesDragonBall">
+            <p>As aventuras de Goku em busca das esferas do dragão.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoOnePiece" (click)="favoritoOnePiece = !favoritoOnePiece">★</span>
+        <a [href]="one_piece" target="_blank" title="One Piece">
+            <img src="Icones Animes/Icone One Piece.jpg" alt="one_piece">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesOnePiece = !detalhesOnePiece">
+            {{ detalhesOnePiece ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesOnePiece">
+            <p>A jornada de Luffy e sua tripulação para encontrar o tesouro One Piece e se tornar o Rei dos Piratas.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoJujutsuKaisen" (click)="favoritoJujutsuKaisen = !favoritoJujutsuKaisen">★</span>
+        <a [href]="jujutsu_kaisen" target="_blank" title="Jujutsu Kaisen">
+            <img src="Icones Animes/Icone Jujutsu Kaisen.jpg" alt="jujutsu_kaisen">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesJujutsuKaisen = !detalhesJujutsuKaisen">
+            {{ detalhesJujutsuKaisen ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesJujutsuKaisen">
+            <p>Yuji Itadori junta-se a uma organização secreta de feiticeiros para combater maldições.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoDeathNote" (click)="favoritoDeathNote = !favoritoDeathNote">★</span>
+        <a [href]="death_note" target="_blank" title="Death Note">
+            <img src="Icones Animes/Icone Death Note.jpg" alt="death_note">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesDeathNote = !detalhesDeathNote">
+            {{ detalhesDeathNote ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesDeathNote">
+            <p>Um estudante brilhante encontra um caderno que pode matar qualquer pessoa cujo nome seja escrito nele.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoDemonSlayer" (click)="favoritoDemonSlayer = !favoritoDemonSlayer">★</span>
+        <a [href]="demon_slayer" target="_blank" title="Demon Slayer">
+            <img src="Icones Animes/Icone Demon Slayer.jpg" alt="demon_slayer">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesDemonSlayer = !detalhesDemonSlayer">
+            {{ detalhesDemonSlayer ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesDemonSlayer">
+            <p>Tanjiro torna-se um caçador de demônios para salvar a sua irmã que foi transformada num deles.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoNanatsuNoTaizai" (click)="favoritoNanatsuNoTaizai = !favoritoNanatsuNoTaizai">★</span>
+        <a [href]="nanatsu_no_taizai" target="_blank" title="Nanatsu no Taizai">
+            <img src="Icones Animes/Icone Os Sete Pecados Capitais.jpg" alt="nanatsu_no_taizai">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesNanatsuNoTaizai = !detalhesNanatsuNoTaizai">
+            {{ detalhesNanatsuNoTaizai ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesNanatsuNoTaizai">
+            <p>Um grupo de cavaleiros renegados tenta limpar o seu nome e salvar o reino de Liones.</p>
+        </div>
+    </div>
+
+    <div class="anime-item">
+        <span class="estrela" [class.marcada]="favoritoOnePunchMan" (click)="favoritoOnePunchMan = !favoritoOnePunchMan">★</span>
+        <a [href]="one_punch_man" target="_blank" title="One Punch Man">
+            <img src="Icones Animes/Icone One Punch Man.jpg" alt="one_punch_man">
+        </a>
+        <button class="btn-detalhes" (click)="detalhesOnePunchMan = !detalhesOnePunchMan">
+            {{ detalhesOnePunchMan ? 'Ocultar detalhes' : 'Mostrar detalhes' }}
+        </button>
+        <div class="caixa-sinopse" *ngIf="detalhesOnePunchMan">
+            <p>A vida de Saitama, um herói que consegue derrotar qualquer inimigo com apenas um soco.</p>
+        </div>
+    </div>
 </div>
